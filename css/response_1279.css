@@ -1,0 +1,250 @@
+@media (max-width: 1279px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    .cont
+    {
+        padding: 0 15px;
+    }
+
+
+    .block_title
+    {
+        font-size: 42px;
+        line-height: 42px;
+
+        margin-bottom: 30px;
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    header .info
+    {
+        padding: 25px 0;
+    }
+
+
+    header .slogan
+    {
+        font-size: 55px;
+        line-height: 67px;
+    }
+
+
+    header nav
+    {
+        margin-left: -15px;
+
+        flex-wrap: nowrap;
+    }
+
+    header nav a
+    {
+        line-height: 16px;
+
+        display: flex;
+
+        height: 60px;
+        padding: 10px 25px;
+
+        text-align: center;
+
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+
+    header nav a span
+    {
+        text-decoration: underline;
+
+        border: none;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .first_section
+    {
+        height: 500px;
+
+        background-size: cover;
+    }
+
+    .first_section .info
+    {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 52px;
+        line-height: 62px;
+
+        margin-bottom: 30px;
+    }
+
+
+    .first_section .contacts .box,
+    .first_section .info .box
+    {
+        height: 250px;
+    }
+
+
+
+    .you_get .item .icon,
+    .panorama_info .item .icon
+    {
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .panorama_info .item
+    {
+        padding: 20px;
+    }
+
+
+
+    .gallery_block .img
+    {
+        width: calc(100% - 400px);
+    }
+
+    .gallery_block .info
+    {
+        width: 400px;
+    }
+
+    .gallery_block .title
+    {
+        margin-bottom: 60px;
+    }
+
+
+
+    .contacts_block .adres
+    {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .contacts_block .route
+    {
+        padding: 30px;
+    }
+
+    .contacts_block .route .grid
+    {
+        margin-left: -30px;
+    }
+
+    .contacts_block .route .item
+    {
+        margin-left: 30px;
+    }
+
+
+
+    .for_school .price
+    {
+        font-size: 22px;
+        line-height: 30px;
+
+        padding: 15px 20px;
+
+        letter-spacing: 0;
+    }
+
+
+
+    .for_school .info
+    {
+        padding: 20px;
+    }
+
+
+
+    .individual .grid .item
+    {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+
+    .individual .invite,
+    .individual .price
+    {
+        font-size: 22px;
+        line-height: 30px;
+
+        padding: 15px 20px;
+
+        letter-spacing: 0;
+    }
+
+
+    .individual .gift
+    {
+        background-size: auto 55%;
+    }
+
+
+
+    .about_cert .info
+    {
+        line-height: 30px;
+
+        padding: 20px 25px;
+    }
+
+
+
+    .how_cert .grid,
+    .panorama_price .grid
+    {
+        margin-left: -40px;
+    }
+
+    .how_cert .item,
+    .panorama_price .item
+    {
+        margin-left: 40px;
+    }
+
+    .panorama_price .item .icon
+    {
+        width: 100%;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .col.right
+    {
+        margin-right: 0;
+    }
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+}

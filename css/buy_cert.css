@@ -1,0 +1,244 @@
+.buy_cert{
+    padding: 60px 0 70px;
+
+    background: #ffd572;
+}
+
+
+.buy_cert .grid{
+    display: flex;
+
+    margin-left: -30px;
+
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.buy_cert .item_wrap{
+    width: 30%;
+}
+
+.buy_cert .item_wrap.mini{
+    width: 10%;
+}
+
+.buy_cert .item_wrap .name,
+.buy_cert .item_wrap .field{
+    margin-left: 30px;
+}
+
+
+.buy_cert .line{
+    margin-bottom: 25px;
+}
+
+
+.buy_cert .name{
+    margin-bottom: 10px;
+
+    color: #404040;
+    font: 16px/24px CoreSansGS;
+}
+
+
+.buy_cert .input{
+    display: block;
+
+    width: 100%;
+    height: 40px;
+
+    padding: 0 12px;
+
+    color: #404040;
+    font: 700 18px CoreSansGS;
+
+    border: none;
+    background: #fff;
+}
+
+
+.buy_cert .amount .input{
+    float: left;
+
+    margin: 0 -18px;
+    padding: 0 20px;
+
+    font-size: 24px;
+
+    text-align: center;
+}
+
+
+.buy_cert .amount a{
+    position: relative;
+
+    display: block;
+    float: left;
+
+    width: 18px;
+    height: 40px;
+}
+
+.buy_cert .amount a.minus:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 16px;
+    height: 14px;
+
+    margin-top: -7px;
+    margin-left: -12px;
+
+    border-top: 7px solid transparent;
+    border-right: 8px solid #404040;
+    border-bottom: 7px solid transparent;
+    border-left: 8px solid transparent;
+
+    content: '';
+}
+
+.buy_cert .amount a.plus:after{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    display: block;
+
+    width: 16px;
+    height: 14px;
+
+    margin-top: -7px;
+    margin-left: -5px;
+
+    border-top: 7px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 8px solid #404040;
+
+    content: '';
+}
+
+
+.buy_cert ::-webkit-input-placeholder{
+    color: #959595;
+}
+.buy_cert ::-moz-placeholder{
+    color: #959595;
+}
+.buy_cert :-moz-placeholder{
+    color: #959595;
+}
+.buy_cert :-ms-input-placeholder{
+    color: #959595;
+}
+
+
+.buy_cert .submit{
+    padding-top: 15px;
+}
+
+.buy_cert .submit_btn{
+    display: inline-block;
+    vertical-align: top;
+
+    min-width: 220px;
+    height: 50px;
+
+    padding: 0 20px;
+
+    color: #fff;
+    font: 700 16px/50px CoreSansGS;
+
+    border: none;
+    background: #e95345;
+
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    transition: background .2s linear;
+}
+
+.buy_cert .submit_btn:hover{
+    background: #ff5b4c;
+}
+
+
+
+@media (max-width: 1279px){
+    .buy_cert{
+        padding: 60px 0;
+    }
+
+    .buy_cert .item_wrap{
+        width: 28%;
+    }
+
+    .buy_cert .item_wrap.mini{
+        width: 16%;
+    }
+}
+
+
+
+@media (max-width: 1023px){
+    .buy_cert{
+        padding: 40px 0;
+    }
+
+
+    .buy_cert .grid{
+        margin-left: -15px;
+    }
+
+    .buy_cert .item_wrap .name,
+    .buy_cert .item_wrap .field{
+        margin-left: 15px;
+    }
+
+
+    .buy_cert .input{
+        font-size: 14px;
+    }
+
+    .buy_cert .submit{
+        padding-top: 0;
+    }
+}
+
+
+
+@media (max-width: 767px){
+    .buy_cert .item_wrap.mini,
+    .buy_cert .item_wrap{
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 479px){
+    .buy_cert .item_wrap.mini,
+    .buy_cert .item_wrap{
+        width: 100%;
+    }
+
+
+    .buy_cert .line{
+        margin-bottom: 15px;
+    }
+
+    .buy_cert .name{
+        margin-bottom: 5px;
+    }
+
+
+    .buy_cert .submit{
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,395 @@
+@media (max-width: 479px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    .block_title
+    {
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    header .logo
+    {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header .logo a,
+    header .logo img
+    {
+        margin: 0 auto;
+    }
+
+
+    header .slogan
+    {
+        font-size: 26px;
+        line-height: 28px;
+
+        width: 100%;
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .first_section .contacts
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .first_section .contacts:before
+    {
+        z-index: -1;
+        right: -15px;
+        left: auto;
+    }
+
+    .first_section .info .box
+    {
+        padding-right: 15px;
+        padding-bottom: 80px;
+
+        text-align: center;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+
+
+    .you_get .item_wrap
+    {
+        width: 100%;
+    }
+
+
+
+    .excursion_program .item .info
+    {
+        font-size: 15px;
+        line-height: 20px;
+
+        padding: 15px 20px;
+    }
+
+    .excursion_program .item .title
+    {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+
+
+    .reviews .slider
+    {
+        padding: 20px;
+    }
+
+    .reviews .review .info
+    {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .reviews .review .author
+    {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .reviews .owl-carousel .owl-nav .owl-prev
+    {
+        left: -8px;
+    }
+
+    .reviews .owl-carousel .owl-nav .owl-next
+    {
+        right: -8px;
+    }
+
+
+
+    .faq .item .question
+    {
+        font-size: 16px;
+        line-height: 18px;
+
+        padding: 10px 15px;
+    }
+
+
+
+    .gallery_block .info
+    {
+        padding: 20px;
+
+        text-align: center;
+    }
+
+    .gallery_block .title
+    {
+        font-size: 20px;
+        line-height: 22px;
+
+        text-align: center;
+    }
+
+
+    .gallery_block .link
+    {
+        font-size: 20px;
+        line-height: 50px;
+
+        width: 100%;
+        height: 50px;
+    }
+
+
+
+    .contacts_block .adres
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    .contacts_block .route .item_wrap
+    {
+        width: 100%;
+    }
+
+
+
+    .for_school .price
+    {
+        padding: 15px 20px;
+    }
+
+    .for_school .price small
+    {
+        font-size: 14px;
+        line-height: 16px;
+
+        display: block;
+
+        margin-top: 10px;
+    }
+
+
+
+    .for_school .info
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 15px 20px;
+    }
+
+
+
+    .steps .col
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .steps .col .name
+    {
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+
+
+    .steps .gift .name
+    {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+
+    .steps .gift
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    .individual .item_wrap,
+    .individual .item_wrap:nth-child(2)
+    {
+        width: 100%;
+    }
+
+
+
+    .individual .invite
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+
+    .individual .price small
+    {
+        font-size: 14px;
+        line-height: 16px;
+
+        display: block;
+
+        margin-top: 10px;
+    }
+
+
+
+    .individual .gift
+    {
+        font-size: 14px;
+        line-height: 20px;
+
+        padding: 20px;
+    }
+
+    .individual .gift .title
+    {
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+
+
+    .conditions .item
+    {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+
+
+    .panorama_gallery .item
+    {
+        width: 50%;
+        height: 100px;
+    }
+
+    .panorama_gallery .item.big_width
+    {
+        width: 100%;
+    }
+
+    .panorama_gallery .item.big_height
+    {
+        height: 200px;
+    }
+
+
+
+    .panorama_info .item_wrap
+    {
+        width: 100%;
+    }
+
+    .panorama_info .item
+    {
+        font-size: 15px;
+        line-height: 21px;
+
+        height: auto;
+        padding-bottom: 140px;
+    }
+
+    .panorama_info .item .icon
+    {
+        display: block;
+
+        max-height: 100px;
+    }
+
+
+
+    .panorama_price .item_wrap
+    {
+        width: 100%;
+    }
+
+
+
+    .excursion_program .free_time
+    {
+        font-size: 18px;
+        line-height: 22px;
+
+        padding: 90px 20px 20px 20px;
+
+        text-align: center;
+
+        background-position: 50% 20px;
+    }
+
+
+
+    .steps .tabs li a
+    {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+
+    .steps .name
+    {
+        font-size: 22px;
+        line-height: 24px;
+
+        margin-bottom: 10px;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .info
+    {
+        padding-bottom: 5px;
+    }
+
+    footer .info .contacts,
+    footer .adres,
+    footer .col.right
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+}

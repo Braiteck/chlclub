@@ -1,0 +1,430 @@
+@media (max-width: 767px)
+{
+    /*---------------
+        Main styles
+    ---------------*/
+    .block_title
+    {
+        font-size: 28px;
+        line-height: 28px;
+
+        margin-bottom: 25px;
+    }
+
+
+
+    /*---------------
+        Header
+    ---------------*/
+    header .slogan
+    {
+        font-size: 30px;
+        line-height: 34px;
+
+        text-align: right;
+    }
+
+
+
+    /*---------------
+        Sidebar
+    ---------------*/
+
+
+
+    /*---------------
+        Main section
+    ---------------*/
+    .first_section .info
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .first_section .info .title
+    {
+        font-size: 40px;
+        line-height: 40px;
+
+        margin-bottom: 25px;
+    }
+
+    .first_section .info br
+    {
+        display: none;
+    }
+
+
+    .first_section .info .age
+    {
+        font-size: 30px;
+        line-height: 56px;
+
+        right: 15px;
+        bottom: 15px;
+
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+
+    .you_get .item_wrap
+    {
+        width: 50%;
+    }
+
+    .you_get .item
+    {
+        font-size: 18px;
+        line-height: 24px;
+
+        height: 200px;
+    }
+
+    .you_get .item small
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+    .excursion_program .item .time_wrap
+    {
+        display: block;
+
+        width: 100%;
+        height: auto;
+    }
+
+    .excursion_program .item .info
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+
+
+    .reviews .slider
+    {
+        padding: 30px 60px;
+    }
+
+    .reviews .review .foto
+    {
+        float: none;
+
+        margin: 0 auto 20px;
+    }
+
+
+    .reviews .review .info
+    {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+
+    .faq .item .question
+    {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+
+    .faq .item .answer
+    {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+
+
+
+    .contacts_block .adres
+    {
+        font-size: 20px;
+        line-height: 26px;
+
+        display: block;
+
+        width: 100%;
+        height: auto;
+        padding: 20px 25px;
+
+        text-align: center;
+    }
+
+    .contacts_block .adres div + div
+    {
+        margin-top: 20px;
+    }
+
+    .contacts_block .adres br
+    {
+        display: none;
+    }
+
+    .contacts_block .map
+    {
+        display: block;
+
+        width: 100%;
+        height: 320px;
+    }
+
+
+
+    .contacts_block .route
+    {
+        padding: 15px 15px 1px;
+    }
+
+    .contacts_block .route .item_wrap
+    {
+        width: 50%;
+        margin-bottom: 15px;
+    }
+
+
+
+    .for_school .desc
+    {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .for_school .price
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    .steps .col
+    {
+        width: 100%;
+        padding: 20px 25px;
+    }
+
+
+
+    .steps .gift
+    {
+        padding: 20px 25px;
+    }
+
+    .steps .gift .text
+    {
+                column-count: 1;
+        -webkit-column-count: 1;
+           -moz-column-count: 1;
+        -webkit-column-gap: 0;
+           -moz-column-gap: 0;
+                column-gap: 0;
+    }
+
+    .steps .gift .text br
+    {
+        display: none;
+    }
+
+
+
+    .individual .item_wrap,
+    .individual .item_wrap:nth-child(2)
+    {
+        width: 50%;
+    }
+
+    .individual .item_wrap:nth-child(3)
+    {
+        width: 100%;
+    }
+
+    .individual .item_wrap:nth-child(3) .item
+    {
+        background-size: auto 85%;
+    }
+
+
+
+    .individual .invite,
+    .individual .price
+    {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+
+
+    .conditions .items
+    {
+        margin-left: 0;
+    }
+
+    .conditions .item
+    {
+        width: 100%;
+        margin-bottom: 20px;
+        margin-left: 0;
+    }
+
+
+
+    .about_cert .info
+    {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+
+
+    .how_cert .grid
+    {
+        margin-bottom: -25px;
+    }
+
+    .how_cert .item_wrap
+    {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+
+
+    .panorama_gallery .item
+    {
+        height: 105px;
+    }
+
+    .panorama_gallery .item.big_height
+    {
+        height: 210px;
+    }
+
+
+
+    .panorama_info .item_wrap
+    {
+        width: 50%;
+    }
+
+    .panorama_info .item
+    {
+        line-height: 23px;
+    }
+
+
+    .panorama_price .grid
+    {
+        margin-bottom: -25px;
+    }
+
+    .panorama_price .item_wrap
+    {
+        width: 50%;
+        margin-bottom: 25px;
+    }
+
+
+
+    .steps .tabs
+    {
+        flex-wrap: wrap;
+    }
+
+    .steps .tabs li a
+    {
+        min-height: 52px;
+    }
+
+
+    .steps .tab_content .grid .item
+    {
+        width: calc(100% - 40px);
+    }
+
+    .steps .name
+    {
+        font-size: 24px;
+        line-height: 26px;
+    }
+
+
+
+    /*---------------
+        Footer
+    ---------------*/
+    footer .info
+    {
+        font-size: 15px;
+        line-height: 22px;
+
+        padding: 25px 0;
+    }
+
+
+    footer .info .contacts
+    {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+
+
+    footer .adres
+    {
+        display: block;
+
+        width: 50%;
+        margin-right: 0;
+        padding-right: 10px;
+    }
+
+    footer .adres br
+    {
+        display: none;
+    }
+
+
+    footer .col.right
+    {
+        width: 50%;
+    }
+
+
+
+    footer .bottom .links a
+    {
+        display: block;
+
+        width: 100%;
+    }
+
+    footer .bottom .links a + a
+    {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+
+    footer .creator
+    {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+
+
+    /*---------------
+        PopUp
+    ---------------*/
+}
