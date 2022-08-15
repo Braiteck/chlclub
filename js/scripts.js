@@ -1,50 +1,50 @@
-$(function(){
+$(function () {
 	// Отзывы
 	$('.reviews .slider').owlCarousel({
 		loop: true,
-	    nav: true,
-	    dots: false,
-	    navSpeed: 750,
-	    smartSpeed: 750,
-	    autoplaySpeed: 750,
-	    margin: 80,
-	    items : 1,
+		nav: true,
+		dots: false,
+		navSpeed: 750,
+		smartSpeed: 750,
+		autoplaySpeed: 750,
+		margin: 80,
+		items: 1,
 	})
 
 
 	// Подарочный сертификат
 	$('.about_cert .slider').owlCarousel({
 		loop: true,
-	    nav: true,
-	    dots: false,
-	    navSpeed: 750,
-	    smartSpeed: 750,
-	    autoplaySpeed: 750,
-	    margin: 0,
-	    items : 1,
+		nav: true,
+		dots: false,
+		navSpeed: 750,
+		smartSpeed: 750,
+		autoplaySpeed: 750,
+		margin: 0,
+		items: 1,
 	})
 
 
 	// Ваши фотографии
 	$('.gallery_block .slider').owlCarousel({
 		loop: true,
-	    nav: true,
-	    dots: false,
-	    navSpeed: 750,
-	    smartSpeed: 750,
-	    autoplaySpeed: 750,
-	    margin: 0,
-	    items : 1,
-	    autoplay: true,
+		nav: true,
+		dots: false,
+		navSpeed: 750,
+		smartSpeed: 750,
+		autoplaySpeed: 750,
+		margin: 0,
+		items: 1,
+		autoplay: true,
 		autoplayTimeout: 5000
 	})
 
 
 	// FAQ
-	$('.faq .question').click(function(e){
+	$('.faq .question').click(function (e) {
 		e.preventDefault()
 
-		if( $(this).hasClass('active') ) {
+		if ($(this).hasClass('active')) {
 			$(this).removeClass('active').next().slideUp()
 		} else {
 			$('.faq .question').removeClass('active')
@@ -56,7 +56,7 @@ $(function(){
 
 
 	// Кнопка 'Вверх'
-	$('.buttonUp a').click(function(e) {
+	$('.buttonUp a').click(function (e) {
 		e.preventDefault()
 
 		$('body,html').stop(false, false).animate({
@@ -71,9 +71,9 @@ $(function(){
 		prevHtml: '<div class="prev"></div>',
 		nextHtml: '<div class="next"></div>',
 		navTitles: {
-		    days: 'MM yyyy',
-		    months: 'yyyy',
-		    years: 'yyyy1 - yyyy2'
+			days: 'MM yyyy',
+			months: 'yyyy',
+			years: 'yyyy1 - yyyy2'
 		}
 	})
 
@@ -83,75 +83,104 @@ $(function(){
 
 
 	//Изменение количества товара
-	$('.amount .minus').click(function(e){
-	    e.preventDefault()
+	$('.amount .minus').click(function (e) {
+		e.preventDefault()
 
-	    var input = $(this).parents('.amount').find('input')
-	    var inputVal = parseInt(input.val())
-	    var minimum = parseInt(input.attr('data-minimum'))
+		var input = $(this).parents('.amount').find('input')
+		var inputVal = parseInt(input.val())
+		var minimum = parseInt(input.attr('data-minimum'))
 
-	    if(inputVal > minimum){
-	    	input.val(inputVal-1)
-	    }
+		if (inputVal > minimum) {
+			input.val(inputVal - 1)
+		}
 	})
 
-	$('.amount .plus').click(function(e){
-	    e.preventDefault()
+	$('.amount .plus').click(function (e) {
+		e.preventDefault()
 
-	    var input = $(this).parents('.amount').find('input')
-	    var inputVal = parseInt(input.val())
-	    var maximum = parseInt(input.attr('data-maximum'))
+		var input = $(this).parents('.amount').find('input')
+		var inputVal = parseInt(input.val())
+		var maximum = parseInt(input.attr('data-maximum'))
 
-	    if(inputVal < maximum){
-	    	input.val(inputVal-(-1))
-	    }
+		if (inputVal < maximum) {
+			input.val(inputVal - (-1))
+		}
 	})
 
 
 	// Моб. меню
-	$('header .mob_menu_link').toggle(function(){
+	$('header .mob_menu_link').toggle(function () {
 		$(this).addClass('active')
 		$('header nav').fadeIn()
-	}, function(){
+	}, function () {
 		$(this).removeClass('active')
 		$('header nav').fadeOut()
 	})
 
 
 	// Увеличение картинки
-	$('.fancy_img').fancybox({
-		transitionEffect : 'slide',
-		animationEffect : 'fade',
-		i18n : {
-			'en' : {
-				CLOSE : 'Закрыть'
-			}
+	Fancybox.defaults.autoFocus = false
+	Fancybox.defaults.trapFocus = false
+	Fancybox.defaults.dragToClose = false
+	Fancybox.defaults.placeFocusBack = false
+	Fancybox.defaults.l10n = {
+		CLOSE: "Закрыть",
+		NEXT: "Следующий",
+		PREV: "Предыдущий",
+		MODAL: "Вы можете закрыть это модальное окно нажав клавишу ESC"
+	}
+
+	// Увеличение картинки
+	Fancybox.bind('.fancy_img', {
+		Image: {
+			zoom: false,
+		},
+		Thumbs: {
+			autoStart: false,
 		}
 	})
 
 
 	// Табы
-	$('.tabs_container').each(function(){
-	    $(this).find('.tab_content:first').show()
+	$('.tabs_container').each(function () {
+		$(this).find('.tab_content:first').show()
 	})
 
-	$('.tabs li').click(function() {
-	    var parentBox = $(this).parents('.tabs_container')
+	$('.tabs li').click(function () {
+		var parentBox = $(this).parents('.tabs_container')
 
-	    $(parentBox).find('.tabs li').removeClass('active')
-	    $(this).addClass('active')
-	    $(parentBox).find('.tab_content').hide()
+		$(parentBox).find('.tabs li').removeClass('active')
+		$(this).addClass('active')
+		$(parentBox).find('.tab_content').hide()
 
-	    var activeTab = $(this).find('a').attr('href')
-	    $(activeTab).fadeIn()
-	    return false
+		var activeTab = $(this).find('a').attr('href')
+		$(activeTab).fadeIn()
+		return false
 	})
+
+
+	// Галерея
+	if ($('.excursion .gallery .swiper').length) {
+		new Swiper('.excursion .gallery .swiper', {
+			loop: false,
+			speed: 500,
+			watchSlidesVisibility: true,
+			slideActiveClass: 'active',
+			slideVisibleClass: 'visible',
+			spaceBetween: 0,
+			slidesPerView: 'auto',
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev'
+			}
+		})
+	}
 })
 
 
-$(window).scroll(function(){
+$(window).scroll(function () {
 	// Кнопка 'Вверх'
-	if( $(this).scrollTop() > $(window).innerHeight() ){
+	if ($(this).scrollTop() > $(window).innerHeight()) {
 		$('.buttonUp').fadeIn(300)
 	} else {
 		$('.buttonUp').fadeOut(200)
